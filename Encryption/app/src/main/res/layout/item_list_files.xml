@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/txt_index"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="1."
+        />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txt_index"
+        android:layout_marginLeft="10dp"
+        fresco:placeholderImage="@drawable/a"
+        />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/img_icon"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="a.jpg"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:text=""
+        android:layout_centerVertical="true"
+        />
+
+
+</RelativeLayout>

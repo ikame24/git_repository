@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ListView
+        android:id="@+id/lv_folders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"></ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_encryption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加密"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn_decryption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="解密"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
